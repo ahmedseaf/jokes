@@ -1,0 +1,129 @@
+.JokeList{
+  display: flex;
+  max-width: 80%;
+  width: 100%;
+  align-items: center;
+}
+.JokeList-sidebar{
+  background-color: #ca6062;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  box-shadow: 0 0 15px #8f523a, 0 10px 10px #ff8a65, inset 0 0 20px #ff5f62;
+}
+.JokeList-sidebar .Sidebar-title{
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #fff;
+  padding-top: 3em;
+}
+.JokeList-sidebar .Sidebar-title span{
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.JokeList-sidebar .Sidebar-icon .em{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: -1px -1px 20px 11px #844041, 0px 0px 20px 1px #3f2929, inset 0px 0px 0px 10px #d4898b;
+}
+
+
+
+.JokeList-sidebar .Sidebar-control{
+  padding-bottom: 3em;
+}
+.JokeList-sidebar .Sidebar-control button{
+  border: none;
+  outline: none;
+  background-color: #ff8a65;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 20px #5c2b2c, 0 10px 15px #7f5353;
+  border-radius: 1em;
+}
+.JokeList-sidebar .Sidebar-control button:active{
+  transform-origin: center;
+  transform: scale(0.95);
+}
+.JokeList-sidebar .Sidebar-control button:hover{
+  box-shadow: 0 0 20px #5c2b2c, 0 12px 22px #503838;
+}
+
+
+
+
+
+
+
+.JokeList-content-container {
+  width: 70%;
+  background-color: #fff;
+  height: 550px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+.JokeList-content-container .JokeList-content{
+  display: grid;
+  grid-template-columns: 100px 1fr 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #fce2dd;
+}
+.JokeList-content-container .JokeList-content .JokeList-control{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.JokeList-content-container .JokeList-content .JokeList-control .counter{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  color: gray;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #bdbdbd;
+}
+.JokeList-content-container .JokeList-content .JokeList-control .fas{
+  cursor: pointer;
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #bfa787;
+  transition: all 0.2s ease-in-out;
+  
+}
+.JokeList-content-container .JokeList-content .JokeList-control .fas:hover{
+  background-color: #ff8a65;
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+}
+.JokeList-content-container .JokeList-content .Joke-title{
+  text-align: left;
+  font-size: 0.8em;
+  color: gray;
+  padding: 0 10px;
+}
+.JokeList-content-container .JokeList-content .JokeList-emoji{
+  text-align: center;
+}
+.JokeList-content-container .JokeList-content .JokeList-emoji .em{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgb(191 191 191);
+}
